@@ -1,0 +1,94 @@
+/* Base style for all application sections */
+.item {
+    display: grid;
+    grid-template-columns: 1fr; /* Each section occupies one column */
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box-shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  }
+  
+  .item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase box-shadow on hover */
+  }
+  
+  /* Labels and Inputs */
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color for better readability */
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #2196f3; /* Change border color on focus */
+  }
+  
+  /* Headings (H2) */
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2196f3; /* Darker blue for border */
+    color: #333; /* Darker text color for better readability */
+  }
+  
+  /* Container Styling */
+  .container {
+    background-color: #f8f9fa; /* Lighter background color */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box-shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increase box-shadow on hover */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #2196f3; /* Blue color for buttons */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  button:hover {
+    background-color: #0d8ae8; /* Darker blue on hover */
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px; /* Reduced padding for smaller screens */
+    }
+  
+    input,
+    textarea {
+      padding: 8px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  }
+  

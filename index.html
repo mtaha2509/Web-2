@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="jobApplicationForm" class="container">
+      <h2>Personal Information</h2>
+      <div class="item personalInfo">
+        <div class="input-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required />
+        </div>
+        <div class="input-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required />
+        </div>
+        <div class="input-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" required />
+        </div>
+        <div class="input-group">
+          <label for="emailAddress">Email Address:</label>
+          <input type="text" id="emailAddress" required />
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Resume and Cover Letter</h2>
+      <div class="item resumeAndCoverLetter">
+        <div class="input-group">
+          <label for="resume">Upload Resume:</label>
+          <input type="file" id="resume" accept=".pdf,.doc,.docx" required />
+        </div>
+        <div class="input-group">
+          <label for="coverLetter">Cover Letter:</label>
+          <textarea id="coverLetter" rows="4" required></textarea>
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Education</h2>
+      <div class="item education">
+        <div class="input-group">
+          <label for="highestEducation">Highest Education Level:</label>
+          <input type="text" id="highestEducation" required />
+        </div>
+        <div class="input-group">
+          <label for="University">University:</label>
+          <input type="text" id="University" required />
+        </div>
+        <div class="input-group">
+          <label for="major">Major:</label>
+          <input type="text" id="Major" required />
+        </div>
+        <div class="input-group">
+          <label for="graduation">Graduation Year:</label>
+          <input type="text" id="graduation" required />
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Employment History</h2>
+      <div class="item employmentHistory">
+        <div class="employment-entry">
+          <div class="input-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" class="companyName" required />
+          </div>
+          <div class="input-group">
+            <label for="employmentDates">Employment Dates:</label>
+            <input type="text" class="employmentDates" required />
+          </div>
+          <div class="input-group">
+            <label for="jobResponsibilities">Job Responsibilities:</label>
+            <input type="text" class="jobResponsibilities" required />
+          </div>
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <!-- <button type="button">Add Employment</button> -->
+
+      <h2>Skills</h2>
+      <div class="item skills">
+        <div class="skill-entry">
+          <div class="input-group">
+            <label for="relevantSkills">Relevant Skills:</label>
+            <input type="text" class="relevantSkills" required />
+          </div>
+          <div class="input-group">
+            <label for="certifications">Certifications:</label>
+            <input type="text" class="certifications" required />
+          </div>
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Availability</h2>
+      <div class="item availability">
+        <div class="input-group">
+          <label for="startDate">Start Date:</label>
+          <input type="text" id="startDate" required />
+        </div>
+        <div class="input-group">
+          <label for="preferredWorkSchedule">Preferred Work Schedule:</label>
+          <input type="text" id="preferredWorkSchedule" required />
+        </div>
+        <div class="input-group">
+          <label for="willingnessToRelocate">Willingness to Relocate:</label>
+          <input type="text" id="willingnessToRelocate" required />
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>References</h2>
+      <div class="item references">
+        <div class="reference-entry">
+          <div class="input-group">
+            <label for="ReferenceName">Reference Name:</label>
+            <input type="text" class="ReferenceName" required />
+          </div>
+          <div class="input-group">
+            <label for="ReferenceContactInformation"
+              >Reference Contact Information:</label
+            >
+            <input type="text" class="ReferenceContactInformation" required />
+          </div>
+          <div class="input-group">
+            <label for="relationshipToApplicant"
+              >Relationship to Applicant:</label
+            >
+            <input type="text" class="relationshipToApplicant" required />
+          </div>
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Additional Questions</h2>
+      <div class="item additionalQuestions">
+        <div class="input-group">
+          <label for="whyWork">Why do you want to work for this company?</label>
+          <textarea id="whyWork"></textarea>
+        </div>
+        <button type="button" class="add-button">Add</button>
+      </div>
+      <h2>Consent and Agreement</h2>
+      <div class="item consentAndAgreement">
+        <div class="input-group">
+          <label>
+            <input type="checkbox" id="consent" required />
+            I agree to the terms and conditions
+          </label>
+        </div>
+        <div class="input-group">
+          <label>
+            <input type="checkbox" id="privacyPolicy" required />
+            I acknowledge the privacy policy
+          </label>
+        </div>
+      </div>
+    </form>
+    <button type="submit" id="submitButton" class="submit-button">
+      Submit Application
+    </button>
+    <button id="viewAsTableButton">View Applications as Table</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
